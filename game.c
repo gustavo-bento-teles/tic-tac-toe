@@ -41,24 +41,24 @@ void iniciarJogo() {
 
         // Obtem e avalia se as coordenadas recebidas são válidas
         do {
-        printf("Player %c, digite a coordenada x (0-2): ", player);
-        if (scanf("%d", &coordenadaX) != 1 || coordenadaX < 0 || coordenadaX > 2) {
-            printf("\nEntrada inválida. Tente novamente.\n");
-            continue;
-        }
+            printf("Player %c, digite a coordenada x (0-2): ", player);
+            if (scanf("%d", &coordenadaX) != 1 || coordenadaX < 0 || coordenadaX > 2) {
+                printf("\nEntrada inválida. Tente novamente.\n");
+                continue;
+            }
 
-        printf("Player %c, digite a coordenada y (0-2): ", player);
-        if (scanf("%d", &coordenadaY) != 1 || coordenadaY < 0 || coordenadaY > 2) {
-            printf("\nEntrada inválida. Tente novamente.\n");
-            continue;
-        }
+            printf("Player %c, digite a coordenada y (0-2): ", player);
+            if (scanf("%d", &coordenadaY) != 1 || coordenadaY < 0 || coordenadaY > 2) {
+                printf("\nEntrada inválida. Tente novamente.\n");
+                continue;
+            }
 
-        // Verifica se a jogada é válida
-        validadeJogada = verificaValidadeJogada(playerX, playerO, campoMatriz, coordenadaX, coordenadaY, validadeJogada);
+            // Verifica se a jogada é válida
+            validadeJogada = verificaValidadeJogada(playerX, playerO, campoMatriz, coordenadaX, coordenadaY, validadeJogada);
 
-        if (validadeJogada != 1) {
-            printf("\nJogada inválida. Escolha outro lugar.\n");
-        }
+            if (validadeJogada != 1) {
+                printf("\nJogada inválida. Escolha outro lugar.\n");
+            }
 
         } while (validadeJogada != 1);
 
