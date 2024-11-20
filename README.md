@@ -70,7 +70,7 @@ Simplesmente, **roda a função principal que inicia o jogo por completo**.
 
 ## Uso
 
-##### Para transformar tudo em um executável, faça:
+#### Para transformar tudo em um executável, faça:
 1. Vá até a pasta onde se localizam todos os arquivos deste projeto.
 2. Rode em seu terminal:
 ```bash
@@ -80,13 +80,39 @@ Em um sistema operacional baseado em **Linux**, isso já deve funcionar. Mas se 
 
 > Caso dê algum erro, **é possível que seja por causa do compilador**. Caso você não tenha, recomendo instalar um e modificar o campo "CC" em "Makefile" para a chamada de sistema do compilador que você instalou. Caso tenha, mas seja diferente do que está presente no "Makefile", recomendo que também modifique o campo "CC" em Makefile para a chamada de sistema do compilador presente na sua máquina.
 
-##### Para limpar os arquivos objetos criados (".o") e o executável, faça:
+#### Para limpar os arquivos objetos criados (".o") e o executável, faça:
 1. Ainda na pasta que você fez o comando para criar, rode no seu terminal:
 ```bash
 make clean
 ```
 
 Desta forma todos os arquivos que não sejam de extensão ".o" e o executável continuarão na pasta, mas todos esses outros serão excluídos.
+
+#### Como jogar?
+- O plano do jogo é da seguinte forma:
+
+|___|X:0|X:1|X:2|
+|---|---|---|---|
+|**Y:0**| . | . | . |
+|**Y:1**| . | . | . |
+|**Y:2**| . | . | . |
+
+A partir dessas informações de como o plano funciona, é possível informar as coordenadas X e Y para realizar uma marcação de um "X" ou de um "O".
+
+O eixo *X cresce para a direita*, representando as **colunas**.
+
+O eixo *Y cresce para baixo*, representando as **linhas**.
+
+### Exemplo:
+
+Se quero marcar o último ponto da última linha, informo o **eixo X como 2** e o **eixo Y como 2** também.
+
+Ficando:
+
+| - | - | - |
+|---|---|---|
+| - | - | - |
+| - | - | X |
 
 ## Contribuição
 
