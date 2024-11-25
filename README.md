@@ -89,7 +89,15 @@ make clean
 Desta forma todos os arquivos que não sejam de extensão ".o" e o executável continuarão na pasta, mas todos esses outros serão excluídos.
 
 #### Como jogar?
-- O plano do jogo é da seguinte forma:
+
+Para inciar o jogo é necessário realizar a execução do executável gerado pelo processo acima, então faça:
+
+```bash
+./tic_tac_toe.exe
+```
+
+
+O plano do jogo é da seguinte forma:
 
 |___|X:0|X:1|X:2|
 |---|---|---|---|
