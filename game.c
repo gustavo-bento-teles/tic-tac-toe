@@ -37,7 +37,7 @@ void iniciarJogo() {
     // Looping principal
     while (run) {
         rodada++;
-        printf("\n%d\n", rodada);
+        printf("%d\n", rodada);
 
         // Obtem e avalia se as coordenadas recebidas são válidas
         do {
@@ -76,7 +76,7 @@ void iniciarJogo() {
         mostrarCampo(areaMatriz, campoMatriz);
 
         // Verifica se alguém já venceu e armazena isso em uma variável
-        int running = verificaVencedor(run, player, campoMatriz);
+        int running = verificaVencedor(run, ultimoPlayer, campoMatriz);
 
         // Verifica se houve um empate, verificando se o número de rodadas é equivalente a área da matriz
         if (rodada == areaMatriz) {
